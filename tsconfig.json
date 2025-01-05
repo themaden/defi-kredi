@@ -1,27 +1,41 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "target": "ESnext",                              // Daha yeni JavaScript özellikleri için ESnext kullanıldı
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,                                  // JavaScript dosyalarını da dahil et
+    "skipLibCheck": true,                             // Kütüphanelerdeki tip denetimlerini atla
+    "strict": true,                                   // Tip güvenliğini zorla
+    "noEmit": false,                                  // JavaScript dosyalarını üretmeye izin ver
+    "esModuleInterop": true,                          // ES modülleriyle uyumlu hale getir
+    "module": "esnext",                               // Modern modül sistemini kullan
+    "moduleResolution": "node",                       // Node.js modül çözümleme sistemini kullan
+    "resolveJsonModule": true,                        // JSON dosyalarını modül olarak çözümle
+    "isolatedModules": true,                          // Her modülün izole edilmesini sağla
+    "jsx": "preserve",                                // JSX'i olduğu gibi koru
+    "incremental": true,                              // İleriye dönük derlemelerde hız sağlamak için artan derleme kullan
+    "baseUrl": ".",                                   // Temel dizin olarak kök dizini kullan
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
