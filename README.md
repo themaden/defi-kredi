@@ -1,3 +1,25 @@
+# DeFi Credit Score
+
+DeFi Credit Score is a web application that calculates and visualizes credit scores for Solana wallet addresses based on their DeFi activities on Jupiter and Kamino protocols.
+
+## Features
+
+- Fetches wallet data from Jupiter and Kamino protocols
+- Calculates a credit score based on lending, liquidity, leverage, and swap activities
+- Visualizes the credit score components using charts
+- Provides a user-friendly interface for querying wallet addresses
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or later)
+- npm (v6 or later)
+- A Solana RPC URL (default is https://api.mainnet-beta.solana.com)
+
+## Installation
+
+1. Clone the repository:
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
